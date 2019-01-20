@@ -201,7 +201,7 @@ Allows you to perform operations with incredible ease and clarity:
 
 ## Numerical Data
 
-* [numpy](http://www.numpy.org/) - The fundamental package for numerhon.
+* [numpy](http://www.numpy.org/) - The fundamental package for numerical computation in python.
 So ubiquitous that it might as well be part of python's standard library at this point.
 Ultimately just a contiguous-in-memory C array, wrapped very nicely with python.
 
