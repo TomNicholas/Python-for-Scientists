@@ -237,7 +237,7 @@ Allows users to run Jupyter notebooks from GitHub repositories in the cloud, wit
 
 ## Profiling and benchmarking
 
-* [py-spy]() -
+* [py-spy](https://github.com/benfred/py-spy) - A profiler for python code which doesn't interfere with the running process.
 
 
 ## Speed
@@ -286,10 +286,13 @@ Basically magic, compatible with pytest, and the algorithms used in the implemen
 
 ## Workflow
 
-* [ipython]() -
+*Don't just write and run python scripts. Tools to make your workflow faster, clearer, and easier to come back to later.    *
+
+* [ipython](https://ipython.readthedocs.io/en/stable/) - Run python interactively, like MatLab! Forms the backend of jupyter notebooks.
 * [jupyter notebooks](https://jupyter.org/) -
-* [jupyterlab](https://jupyterlab.readthedocs.io/en/stable/) -
-* [papermill]() -
+* [jupyterlab](https://jupyterlab.readthedocs.io/en/stable/) - A development environment in which you can write Jupyter notebooks.
+The spiritual successor to spyder, in that it is designed specifically for scientists.
+* [papermill](https://papermill.readthedocs.io/en/latest/) - A  tool for parameterizing, executing, and analyzing multiple Jupyter Notebooks.
 
 
 # Beginner Recommendations
