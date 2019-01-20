@@ -1,6 +1,6 @@
 # Python for Science
 
-A curated list of recommened Python frameworks, libraries, software and
+A curated list of recommended Python frameworks, libraries, software and
 resources, all particularly useful for scientific Python users.
 
 Intended for students and researchers in the sciences who want to get
@@ -32,6 +32,7 @@ ways.
     - [Graphical Interfaces](#graphical-interfaces)
     - [Job Scheduling](#job-scheduling)
     - [Labelled data](#labelled-data)
+    - [Mathematical Library Functions](#mathematical-library-functions)
     - [Numerical Data](#numerical-data)
     - [Optimisation](#optimisation)
     - [Package Management](#package-management)
@@ -41,6 +42,7 @@ ways.
     - [Presentations](#presentations)
     - [Profiling and Benchmarking](#profiling-and-benchmarking)
     - [Speed](#speed)
+    - [Statistics](#statistics)
     - [Testing](#testing)
     - [Visualisation](#visualisation)
     - [Workflow](#workflow)
@@ -55,6 +57,7 @@ ways.
 *Libraries for manipulation of symbolic algebra, analytic integration etc.*
 
 * [SymPy]() -
+* [sage]()
 
 
 ## Animations
@@ -71,8 +74,9 @@ ways.
 
 * [PEP8]() -
 * [flake8]() -
-* [black]() -
+* [pycodestyle]() -
 * [structure](https://docs.python-guide.org/writing/structure/) - The officially recommended way to structure any python project.
+
 
 ## Data Storage
 
@@ -83,7 +87,7 @@ ways.
 
 ## Dates and Times
 
-* []() -
+* [dateutil](https://dateutil.readthedocs.io/en/stable/) - Provides powerful extensions to the standard datetime module available in Python.
 
 
 ## Debugging
@@ -93,25 +97,34 @@ ways.
 
 ## Development Environments
 
-* [PyCharm]() -
-* [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) - (follow-on from SPyder)
+*Programs to write code into. The main choice is between a software-engineering style IDE, and one intended specifically for scientific users.*
+
+* [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) - An IDE which incorporates Jupyter notebooks.
+* [PyCharm](https://www.jetbrains.com/pycharm/) - Very powerful IDE for python. Use if you want the full powers a software engineer would expect.
+Has a professional version, which is free for students.
+* [spyder](https://www.spyder-ide.org/) - MatLab-like development environment for scientific python users.
 
 
 ## Documentation
 
 * [sphinx]() -
-* [nbconvert]() -
+* [nbconvert](https://nbconvert.readthedocs.io/en/latest/) - Convert jupyter notebooks to other formats such as PDF, LaTeX, HTML.
 
 
 ## Domain-specific
 
+*Libraries of tools tools developed for python users in various fields of science.*
+
 * [astropy]() -
-* [plasmapy]() -
-* [psychopy]() -
+* [Biopython](https://biopython.org/) - Tools for biological computation.
 * [cartopy]() -
-* [geoviews]() -
-* [pyrocko]() -
-* [SpectroscoPyx]() -
+* [geoviews](http://geoviews.org/) - makes it easy to explore and visualize geographical, meteorological, and oceanographic datasets, such as those used in weather, climate, and remote sensing research.
+* [MetPy](https://unidata.github.io/MetPy/latest/) - MetPy is a collection of tools in Python for reading, visualizing and performing calculations with weather data.
+* [PlasmaPy]() -
+* [psychopy]() -
+* [pyrocko](https://pyrocko.org/) - A seismology toolkit for python.
+* [SpectroscoPyx](https://github.com/PlasmaPy/SpectroscoPyx) - A community developed python package for spectroscopy.
+* [TomoPy](https://tomopy.readthedocs.io/en/latest/) - Package for tomographic data processing and image reconstruction.
 
 
 ## Forecasting
@@ -138,7 +151,7 @@ ways.
 ## Job scheduling
 
 * [experi]() -
-* [papermill]() -
+* [papermill](https://papermill.readthedocs.io/en/latest/) - A  tool for parameterizing, executing, and analyzing multiple Jupyter Notebooks.
 
 
 ## Labelled data
@@ -147,9 +160,17 @@ ways.
 * [xarray]() -
 
 
+## Mathematical library functions
+
+* [scipy](https://docs.scipy.org/doc/scipy/reference/) - The standard resource for all kinds of mathematical functions.
+* [xrft](https://xrft.readthedocs.io/en/latest/) - Discrete Fourier transform operations for xarray data structures.
+
+
 ## Numerical data
 
-* [numpy]() -
+* [numpy](http://www.numpy.org/) - The fundamental package for numerhon.
+So ubiquitous that it might as well be part of python's standard library at this point.
+Ultimately just a contiguous-in-memory C array, wrapped very nicely with python.
 
 
 ## Optimisation problems
@@ -158,6 +179,8 @@ ways.
 
 
 ## Package Management
+
+*Keep track of module dependencies, python versions, and virtual environments.*
 
 * [conda](https://conda.io/docs/index.html) - A package manager specifically intended for use by the scientific python community.
 Developed by the authors of numpy to manage both python packages and the underlying C/Fortran libraries which make them fast.
@@ -168,6 +191,8 @@ Also obviates the need for system virtual environments.
 
 
 ## Parallelization
+
+*Use all the cores of your machine, and scale up to clusters!*
 
 * [dask](https://dask.org/) - Tools for splitting up computations and executing them across many processors in parallel.
 [dask.array](http://docs.dask.org/en/latest/array.html) in particular provides a numpy-like interface to a chunked-in-memory array.
@@ -194,16 +219,18 @@ ds['density'].mean(dim='time')
 *Producing static plots of publication quality.*
 
 * [matplotlib]() -
+* [anatomy of matplotlib](https://github.com/matplotlib/AnatomyOfMatplotlib) - Tutorial on how matplotlib is structured.
 * [scientific-matplotlib]() -
 * [seaborn]() -
 * [xarray.plot]() -
-* [colorcet]() -
+* [colorcet](http://colorcet.pyviz.org/) - A set of useful [perceptually uniform](https://arxiv.org/abs/1509.03700) colormaps for plotting scientific data
 
 
 ## Presentations and sharing work
 
 * [RISE]() -
-* [Binder]() -
+* [Binder](https://mybinder.org/) - Online Jupyter Notebook hosting for GitHub repositories.
+Allows users to run Jupyter notebooks from GitHub repositories in the cloud, without Python installed locally.
 * [jupyter-rise]() -
 * [nb_pdf_template]() -
 
@@ -215,12 +242,25 @@ ds['density'].mean(dim='time')
 
 ## Speed
 
-* [cython]() -
-* [numba]() -
-* [bottleneck]()
+*Python inevitably sacrifices some speed to gain increased clarity.
+Scientific programs usually have one or two functions which do 90% of the work, and there are various ways to dramatically speed these up.
+Use in conjunction with parallelization through dask if you want as much speed as possible.*
+
+* [cython](https://cython.org/) - A compiler which allows you to write snippets of C code into your python for massive speed increases.
+* [F2PY](https://docs.scipy.org/doc/numpy/f2py/) - For calling fast, compiled Fortran subroutines from Python (part of SciPy)
+* [numba](https://numba.pydata.org/) - *Automatic* generation of fast compiled C code from Python functions.
+* [bottleneck](https://kwgoodman.github.io/bottleneck-doc/) - A collection of fast numpy array functions written in C.
+* [Theano](http://www.deeplearning.net/software/theano/) - Allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently.
+
+
+## Statistics
+
+* [statsmodels](http://www.statsmodels.org/stable/index.html) - Provides classes and functions for the estimation of many different statistical models, as well as for conducting statistical tests, and statistical data exploration.
 
 
 ## Testing
+
+*Check that your code actually does what you think it will do!*
 
 * [pytest](https://docs.pytest.org/en/latest/) - The standard unit testing framework for python.
 Essential - if you're not unit-testing your calculations then you are merely hoping that they are actually doing what you think they are.
@@ -241,6 +281,7 @@ Basically magic, compatible with pytest, and the algorithms used in the implemen
 * [cartopy]()
 * [bokeh]() -
 * [plotly]() -
+* [holoviews]() -
 
 
 ## Workflow
@@ -251,12 +292,12 @@ Basically magic, compatible with pytest, and the algorithms used in the implemen
 * [papermill]() -
 
 
-# Beginners Recommendations
+# Beginner Recommendations
 
 * First, install python through anaconda, which will also give you the packages you're about to use.
-* Write your code in either `pycharm` (if you want a good IDE) or `jupyterlab` (if you're used to MatLabs' environment).
+* Write your code in either `pycharm` (if you want a professional IDE), `spyder` or  `jupyterlab` (if you're used to MatLabs' environment).
 * Become familiar with `numpy`, the fundamental numeric object in python, and `matplotlib`, the standard way to plot.
-* Next, wrap your data into a clearer form with either `Pandas` or `xarray` (`xarray` if your data has more than one dimension).
-* As soon as you start writing your own analysis functions, test they are correct with `pytest`.
-* Examine your data on the fly with `ipython`, and record your work in a `jupyter notebook`.
-* Check if someone has already solved your problem for you in one of python's domain-specific scientific software packages.
+* Next, wrap your data into clearer, higher-level objects with either `Pandas` or `xarray` (use `xarray` if your data has more than one dimension).
+* Before writing new analysis functions, check if someone has already solved your problem for you in `scipy` , or in one of python's domain-specific scientific software packages.
+* As soon as you start writing your own analysis functions, test they're correct with unit tests written with `pytest`.
+* Analyse your data interactively with `ipython`, and record your work in a `jupyter notebook`.
