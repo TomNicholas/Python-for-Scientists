@@ -62,7 +62,8 @@ ways.
 
 *Libraries for manipulation of symbolic algebra, analytic integration etc.*
 
-* [SymPy]() -
+* [SymPy](https://www.sympy.org/en/index.html) - SymPy is a Python library for symbolic mathematics.
+It aims to become a full-featured computer algebra system (CAS) while keeping the code as simple as possible in order to be comprehensible and easily extensible.
 * [sagemath](http://www.sagemath.org/) - Mathematical software system with features covering multiple aspects of mathematics, including algebra, combinatorics, numerical mathematics, number theory, and calculus.
 
 
@@ -73,7 +74,7 @@ ways.
 
 ## Bayesian Analysis
 
-* [pymc]() -
+* [pymc3](https://docs.pymc.io/) - Package for Bayesian statistical modeling and probabilistic machine learning which focuses on advanced Markov chain Monte Carlo and variational fitting algorithms.
 * [arviz](https://arviz-devs.github.io/arviz/index.html) - Exploratory analysis of Bayesian models.
 
 
@@ -84,22 +85,29 @@ ways.
 
 ## Code Quality
 
-* [PEP8]() -
-* [flake8]() -
-* [pycodestyle]() -
+*Tools to help you write neat and error-free python code/*
+
+* [PEP8](https://www.python.org/dev/peps/pep-0008/) - The official style guide for python code.
 * [structure](https://docs.python-guide.org/writing/structure/) - The officially recommended way to structure any python project.
+* [flake8](http://flake8.pycqa.org/en/latest/) - A command-line tool which will tell you where you've violated PEP8's recommendations.
+* [pyflakes](https://pypi.org/project/pyflakes/) - Similar to flake8, but shinstead checks for logistic erros (e.g. unused module imports).
+* [pycodestyle](https://media.readthedocs.org/pdf/pycodestyle/latest/pycodestyle.pdf) - A wrapper for flake8 and pyflakes which runs them both.
+* [pylint](http://pylint.pycqa.org/en/latest/intro.html) - A tool that checks for errors in Python code, tries to enforce a coding standard and looks for code smells.
 
 
 ## Data Storage
 
-* [netcdf4]() -
-* [xarray]() -
-* [MITgcm]() -
+* [netcdf4-python](http://unidata.github.io/netcdf4-python/) - netCDF is a popular file format for multidimensional data, developed by the weather and forecasting community. Use this format unless you have a good reason not to.
+netcdf4-python is a Python interface to the netCDF C library.
+* [xarray](http://xarray.pydata.org/en/stable/io.html#netcdf) - xarray's data model is based on netCDF, and provides the easiest way of reading and writing netCDF4 files in python.
+Will also load the data lazily, which is extremely useful when dealing with large amounts of data.
+* [xmitgcm](https://xmitgcm.readthedocs.io/en/latest/) - A python package for reading MITgcm binary MDS files into xarray data structures.
+Included as an example of how to go about loading unusual binary file formats into xarray data structures intelligently.
 
 
 ## Debugging
 
-* [pdb]() - Python debugger
+* [pdb](https://docs.python.org/3/library/pdb.html) - The Python debugger. Part of the python standard library.
 
 
 ## Development Environments
@@ -129,6 +137,7 @@ Originally created for documenting the python language itself.
 * [MetPy](https://unidata.github.io/MetPy/latest/) - MetPy is a collection of tools in Python for reading, visualizing and performing calculations with weather data.
 * [NetworkX](http://networkx.github.io/)  - A package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.
 * [nilearn](http://nilearn.github.io/) - Machine learning for Neuro-Imaging in python.
+* [Parcels](http://oceanparcels.org/) - Track particles along circulating ocean currents.
 * [PlasmaPy](http://docs.plasmapy.org/en/stable/) - Various tools for plasma physics.
 * [psychopy](http://www.psychopy.org/) - An open-source application allowing you run a wide range of neuroscience, psychology and psychophysics experiments.
 * [pyrocko](https://pyrocko.org/) - A seismology toolkit for python.
@@ -140,9 +149,9 @@ Originally created for documenting the python language itself.
 
 ## Error handling
 
-* [errors]() -
-* [warnings]() - Throw proper warnings instead of using print statements. Python standard library module.
-* [logging]()
+* [errors](https://docs.python.org/3/tutorial/errors.html) - How to properly raise and handle errors in python.
+* [warnings](https://docs.python.org/3/library/warnings.html) - Throw proper warnings instead of using print statements. Python standard library module.
+* [logging](https://docs.python.org/3/library/logging.html) - Standard library module for properly logging information about what's going on as your code runs.
 
 
 ## Forecasting
@@ -153,30 +162,35 @@ Developed by Facebook.
 
 ## Gotchas
 
-* [python-gotchas]() -
+* [python-gotchas](https://github.com/satwikkansal/wtfpython) - A collection of surprising Python snippets and lesser-known features.
 
 
 ## GPU acceleration
 
-* [py-cuda]() -
-* [numba]() -
+* [cupy](https://cupy.chainer.org/) - An implementation of a NumPy-compatible multi-dimensional array on CUDA.
+* [numba](http://numba.pydata.org/numba-doc/0.13/CUDAJit.html) - Numba can compile python functions into CUDA code.
 
 
 ## Graphical interfaces
 
-* [pyqt5]() -
+* [pyqt5](http://pyqt.sourceforge.net/Docs/PyQt5/) - Library which lets you use the Qt GUI framework (itself written in C++) from python.
 
 
 ## Job scheduling
 
-* [experi]() -
+* [experi](https://experi.readthedocs.io/en/latest/) - An interface for managing computational experiments with many independent variables.
+* [lancet](http://ioam.github.io/lancet/) - Launch jobs, organize the output, and dissect the results.
 * [papermill](https://papermill.readthedocs.io/en/latest/) - A  tool for parameterizing, executing, and analyzing multiple Jupyter Notebooks.
 
 
 ## Labelled data
 
-* [pandas]() -
-* [xarray]() -
+* [pandas](https://pandas.pydata.org/) - Major library for data analysis, made more powerful through the use of labelled data.
+* [xarray](http://xarray.pydata.org/en/stable/) - N-dimensional labelled arrays and datasets.
+Allows you to perform operations with incredible ease and clarity:
+```python
+average_temp = data['temperature'].sel('longitude'=40).mean(dim='time')
+```
 
 
 ## Mathematical library functions
@@ -229,18 +243,21 @@ ds['density'].mean(dim='time')
 
 ## Physical Units
 
-* [pint]() -
-* [astropy.units]()
+*Keep track of which physical units your numbers are written in.*
+
+* [pint](https://pint.readthedocs.io/en/0.9/) - Package to define, operate and manipulate physical quantities.
+* [astropy.units](http://docs.astropy.org/en/stable/units/) - Submodule of astropy which handles units. Units multiply numpy arrays directly.
 
 
 ## Plotting
 
 *Producing static plots of publication quality.*
 
-* [matplotlib]() -
+* [matplotlib](https://matplotlib.org/) - A 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms.
+The standard way to plot data in python.
 * [anatomy of matplotlib](https://github.com/matplotlib/AnatomyOfMatplotlib) - Tutorial on how matplotlib is structured.
-* [scientific-matplotlib]() -
-* [seaborn]() -
+* [scientific-matplotlib](https://github.com/garrettj403/SciencePlots) - Matplotlib stylesheets for scientifc plots.
+* [seaborn](https://seaborn.pydata.org/) - A  data visualisation library based on matplotlib. Produces much prettier plots than out-of-the-box matplotlib will.
 * [xarray.plot](http://xarray.pydata.org/en/stable/plotting.html) - Submodule of xarray which makes plotting into a one-line job: `data['density'].plot()`.
 * [colorcet](http://colorcet.pyviz.org/) - A set of useful [perceptually uniform](https://arxiv.org/abs/1509.03700) colormaps for plotting scientific data
 
@@ -250,13 +267,14 @@ ds['density'].mean(dim='time')
 * [Binder](https://mybinder.org/) - Online Jupyter Notebook hosting for GitHub repositories.
 Allows users to run Jupyter notebooks from GitHub repositories in the cloud, without Python installed locally.
 * [nb_pdf_template](https://github.com/t-makaro/nb_pdf_template) - A more accurate representation of jupyter notebooks when converting to pdfs.
-* [RISE]() - A plugin for Jupyter which turns notebooks into slick presentations.
-* [jupyter-rise]() -
+* [RISE](https://rise.readthedocs.io/en/docs_hot_fixes/) - A plugin for Jupyter which turns notebooks into slick presentations.
+* [jupyter-rise](https://github.com/binder-examples/jupyter-rise) - Automatically launch the RISE plugin from Binder. Great for giving presentations remotely.
 
 
 ## Profiling and benchmarking
 
-* [py-spy](https://github.com/benfred/py-spy) - A profiler for python code which doesn't interfere with the running prohttps://palletsprojects.com/p/click/cess.
+* [py-spy](https://github.com/benfred/py-spy) - A profiler for python code which doesn't interfere with the running process.
+* [pytest-benchmark](https://pytest-benchmark.readthedocs.io/en/stable/) - A pytest fixture for benchmarking code.
 
 
 ## Scripting
@@ -306,12 +324,14 @@ Basically magic, compatible with pytest, and the algorithms used in the implemen
 
 ## Visualisation
 
+There are currently many competing visualisation libaries in python. 3D support is somewhat lacking though.**
+
 * [animatplot](https://animatplot.readthedocs.io/en/stable/) - A wrapper around `matplotlib`'s `funcanimation` library - makes it very easy to animate matplotlib plots.
 * [mayavi](http://docs.enthought.com/mayavi/mayavi/) - 3D scientific data visualization and plotting in Python.
 * [cartopy](https://scitools.org.uk/cartopy/docs/latest/) -  A library for cartographic projections and plots, with matplotlib support.
-* [bokeh]() -
-* [plotly]() -
-* [holoviews]() -
+* [bokeh](https://bokeh.pydata.org/en/latest/) - Bokeh is an interactive visualization library that targets modern web browsers for presentation.
+* [plotly](https://plot.ly/python/) - Plotly's Python graphing library makes interactive, publication-quality graphs online.
+* [holoviews](http://holoviews.org/) - Stop plotting your data - annotate your data and let it visualize itself.
 * [ipyvolume](https://ipyvolume.readthedocs.io/en/latest/index.html#built-on-ipywidgets) - 3d plotting for Python in the Jupyter notebook.
 * [vispy](http://vispy.org/index.htmlhttp://vispy.org/index.html) - Interactive scientific visualisation in python.
 * [yt](http://yt-project.org/) - Very powerful software suite for analysing and visualising volumetric data.
