@@ -6,45 +6,45 @@ resources, all particularly useful for scientific Python users.
 Intended for students and researchers in the sciences who want to get
 the most out of the open-source Python ecosystem.
 
-Inspired by [awesome-python](https://github.com/vinta/awesome-python),
+There is a section of [must-haves for beginners](#beginners-recommendations).
+
+List inspired by [awesome-python](https://github.com/vinta/awesome-python),
 which is a great similar resource for anything else you might want to do
 with Python!
-
-There is a section of must-haves for beginners. (TODO)
 
 Some libraries appear multiple times where they are useful in multiple
 ways.
 
 
-## Contents
-
-- [Algebra](#algebra)
-- [Animations](#animations)
-- [Bayesian Analysis](#bayesian-analysis)
-- [Code Quality](#code-quality)
-- [Data Storage](#data-storage)
-- [Dates and Times](#dates-and-times)
-- [Debugging](#debugging)
-- [Development Environments](#development-environments)
-- [Documentation](#documentation)
-- [Domain-specific](#domain-specific)
-- [Gotchas](#gotchas)
-- [GPU Acceleration](#gpu-acceleration)
-- [Graphical Interfaces](#graphical-interfaces)
-- [Job Scheduling](#job-scheduling)
-- [Labelled data](#labelled-data)
-- [Numerical Data](#numerical-data)
-- [Optimisation](#optimisation)
-- [Package Management](#package-management)
-- [Parallelization](#parallelization)
-- [Physical Units](#physical-units)
-- [Plotting](#plotting)
-- [Presentations](#presentations)
-- [Profiling and Benchmarking](#profiling-and-benchmarking)
-- [Speed](#speed)
-- [Testing](#testing)
-- [Visualisation](#visualisation)
-- [Workflow](#workflow)
+- [Python-for-Science](#python-for-science)
+    - [Algebra](#algebra)
+    - [Animations](#animations)
+    - [Bayesian Analysis](#bayesian-analysis)
+    - [Code Quality](#code-quality)
+    - [Data Storage](#data-storage)
+    - [Dates and Times](#dates-and-times)
+    - [Debugging](#debugging)
+    - [Development Environments](#development-environments)
+    - [Documentation](#documentation)
+    - [Domain-specific](#domain-specific)
+    - [Gotchas](#gotchas)
+    - [GPU Acceleration](#gpu-acceleration)
+    - [Graphical Interfaces](#graphical-interfaces)
+    - [Job Scheduling](#job-scheduling)
+    - [Labelled data](#labelled-data)
+    - [Numerical Data](#numerical-data)
+    - [Optimisation](#optimisation)
+    - [Package Management](#package-management)
+    - [Parallelization](#parallelization)
+    - [Physical Units](#physical-units)
+    - [Plotting](#plotting)
+    - [Presentations](#presentations)
+    - [Profiling and Benchmarking](#profiling-and-benchmarking)
+    - [Speed](#speed)
+    - [Testing](#testing)
+    - [Visualisation](#visualisation)
+    - [Workflow](#workflow)
+- [Beginners Recommendations](#beginners-recommendations)
 
 
 - - -
@@ -249,3 +249,14 @@ Basically magic, compatible with pytest, and the algorithms used in the implemen
 * [jupyter notebooks](https://jupyter.org/) -
 * [jupyterlab](https://jupyterlab.readthedocs.io/en/stable/) -
 * [papermill]() -
+
+
+# Beginners Recommendations
+
+* First, install python through anaconda, which will also give you the packages you're about to use.
+* Write your code in either `pycharm` (if you want a good IDE) or `jupyterlab` (if you're used to MatLabs' environment).
+* Become familiar with `numpy`, the fundamental numeric object in python, and `matplotlib`, the standard way to plot.
+* Next, wrap your data into a clearer form with either `Pandas` or `xarray` (`xarray` if your data has more than one dimension).
+* As soon as you start writing your own analysis functions, test they are correct with `pytest`.
+* Examine your data on the fly with `ipython`, and record your work in a `jupyter notebook`.
+* Check if someone has already solved your problem for you in one of python's domain-specific scientific software packages.
