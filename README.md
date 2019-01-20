@@ -59,6 +59,7 @@ ways.
 
 ## Animations
 
+* [animatplot]() -
 
 ## Bayesian Analysis
 
@@ -92,7 +93,7 @@ ways.
 ## Development Environments
 
 * [PyCharm]() -
-* [JupyterLab]() - (follow-on from SPyder)
+* [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) - (follow-on from SPyder)
 
 
 ## Documentation
@@ -114,8 +115,7 @@ ways.
 
 ## Forecasting
 
-* [prophet() -
-
+* [prophet]() -
 
 
 ## Gotchas
@@ -153,7 +153,7 @@ ways.
 
 ## Optimisation problems
 
-* []() -
+* [nlopt]() -
 
 
 ## Package Management
@@ -164,8 +164,18 @@ ways.
 
 ## Parallelization
 
-* [dask]() -
-* [xarray]() -
+* [dask](https://dask.org/) - Tools for splitting up computations and executing them across many processors in parallel.
+[dask.array](http://docs.dask.org/en/latest/array.html) in particular provides a numpy-like interface to a chunked-in-memory array.
+Dask is especially useful for analysing datasets which are larger than your RAM.
+* [xarray](http://xarray.pydata.org/en/stable/) - Employs dask behind the scenes to parallelize most operations.
+Simply load your dataset in "chunks" and xarray will operate on each chunk in parallel:
+```python
+# Load data in chunks
+ds = open_dataset('data.nc', chunks={'space': 100}
+
+# Will operate on each spatial chunk in parallel using dask
+ds['density'].mean(dim='time')
+```
 
 
 ## Physical Units
@@ -189,7 +199,7 @@ ways.
 
 * [RISE]() -
 * [Binder]() -
-* [jupyter-rise] -
+* [jupyter-rise]() -
 * [nb_pdf_template]() -
 
 
@@ -207,16 +217,21 @@ ways.
 
 ## Testing
 
-* [pytest]() -
-* [flaky]() -
-* [hypothesis]() -
-* [cosmic-ray]() -
-* [pytest-clarity]() -
+* [pytest](https://docs.pytest.org/en/latest/) - The standard unit testing framework for python.
+Essential - if you're not unit-testing your calculations then you are merely hoping that they are actually doing what you think they are.
+`pytest` does a lot of magic behind the scenes to make it as simple as possible to use, with no boilerplate.
+* [pytest-clarity](https://github.com/darrenburns/pytest-clarity) - A plugin which improves the readability of pytest output.
+* [hypothesis](https://hypothesis.readthedocs.io/en/latest/) - Hypothesis testing for python.
+Normal tests check that your function behaves as expected for some specific input.
+Hypothesis tests check that your function behaves as expected for any input of some type, e.g. any string, or [any numpy array](https://hypothesis.readthedocs.io/en/latest/numpy.html).
+Basically magic, compatible with pytest, and the algorithms used in the implementation are very interesting.
+* [cosmic-ray](https://cosmic-ray.readthedocs.io/en/latest/) - Mutation testing in python. Checks that your test coverage is robust by randomly changing pieces of your code and checking that this change is actually caught by a test failing.
+* [flaky](https://pypi.org/project/flaky/) - pytest plugin for automatically re-running inconsistent ("flaky") tests.
 
 
 ## Visualisation
 
-* [animatplot]() -
+* [animatplot]() - 
 * [mayavi]() -
 * [cartopy]()
 * [bokeh]() -
@@ -226,6 +241,6 @@ ways.
 ## Workflow
 
 * [ipython]() -
-* [jupyter]() -
-* [jupyterlab]() -
+* [jupyter notebooks](https://jupyter.org/) -
+* [jupyterlab](https://jupyterlab.readthedocs.io/en/stable/) -
 * [papermill]() -
