@@ -188,9 +188,9 @@ Developed by Facebook.
 * [pandas](https://pandas.pydata.org/) - Major library for data analysis, made more powerful through the use of labelled data.
 * [xarray](http://xarray.pydata.org/en/stable/) - N-dimensional labelled arrays and datasets.
 Allows you to perform operations with incredible ease and clarity:
-```python
-average_temp = data['temperature'].sel('longitude'=40).mean(dim='time')
-```
+  ```python
+  average_temp = data['temperature'].sel('longitude'=40).mean(dim='time')
+  ```
 
 
 ## Mathematical library functions
@@ -231,14 +231,14 @@ Also obviates the need for system virtual environments.
 [dask.array](http://docs.dask.org/en/latest/array.html) in particular provides a numpy-like interface to a chunked-in-memory array.
 Dask is especially useful for analysing datasets which are larger than your RAM.
 * [xarray](http://xarray.pydata.org/en/stable/) - Employs dask behind the scenes to parallelize most operations.
-Simply load your dataset in "chunks" and xarray will operate on each chunk in parallel:
-```python
-# Load data in chunks
-ds = open_dataset('data.nc', chunks={'space': 100}
+  Simply load your dataset in "chunks" and xarray will operate on each chunk in parallel:
+  ```python
+  # Load data in chunks
+  ds = open_dataset('data.nc', chunks={'space': 100}
 
-# Will operate on each spatial chunk in parallel using dask
-ds['density'].mean(dim='time')
-```
+  # Will operate on each spatial chunk in parallel using dask
+  ds['density'].mean(dim='time')
+  ```
 
 
 ## Physical Units
@@ -324,7 +324,7 @@ Basically magic, compatible with pytest, and the algorithms used in the implemen
 
 ## Visualisation
 
-There are currently many competing visualisation libaries in python. 3D support is somewhat lacking though.**
+*There are currently many competing visualisation libaries in python. 3D support is somewhat lacking though.*
 
 * [animatplot](https://animatplot.readthedocs.io/en/stable/) - A wrapper around `matplotlib`'s `funcanimation` library - makes it very easy to animate matplotlib plots.
 * [mayavi](http://docs.enthought.com/mayavi/mayavi/) - 3D scientific data visualization and plotting in Python.
