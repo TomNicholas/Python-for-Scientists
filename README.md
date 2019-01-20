@@ -10,7 +10,7 @@ Inspired by [awesome-python](https://github.com/vinta/awesome-python),
 which is a great similar resource for anything else you might want to do
 with Python!
 
-There is a section of must-trys for beginners.
+There is a section of must-haves for beginners. (TODO)
 
 Some libraries appear multiple times where they are useful in multiple
 ways.
@@ -19,7 +19,7 @@ ways.
 ## Contents
 
 - [Algebra](#algebra)
-- [ANimations](#animations)
+- [Animations](#animations)
 - [Bayesian Analysis](#bayesian-analysis)
 - [Code Quality](#code-quality)
 - [Data Storage](#data-storage)
@@ -44,7 +44,7 @@ ways.
 - [Speed](#speed)
 - [Testing](#testing)
 - [Visualisation](#visualisation)
-- [Workflow management](#workflow-management)
+- [Workflow](#workflow)
 
 
 - - -
@@ -61,6 +61,7 @@ ways.
 
 * [animatplot]() -
 
+
 ## Bayesian Analysis
 
 * [pymc]() -
@@ -71,7 +72,7 @@ ways.
 * [PEP8]() -
 * [flake8]() -
 * [black]() -
-
+* [structure](https://docs.python-guide.org/writing/structure/) - The officially recommended way to structure any python project.
 
 ## Data Storage
 
@@ -158,8 +159,12 @@ ways.
 
 ## Package Management
 
-* [anaconda]() -
-* [pip]() -
+* [conda](https://conda.io/docs/index.html) - A package manager specifically intended for use by the scientific python community.
+Developed by the authors of numpy to manage both python packages and the underlying C/Fortran libraries which make them fast.
+Also obviates the need for system virtual environments.
+* [anaconda](https://www.anaconda.com/) - Conda, but packaged with a wide range of useful scientific python libraries, including many from this list.
+* [pip](https://pip.pypa.io/en/stable/) - The standard way to install python packages. Use when you can't use conda, but will play nicely together.
+* [setuptools](https://setuptools.readthedocs.io/en/latest/) - For when you make your own module, and want to install it properly into your conda environment (so you never need to touch your `$PYTHONPATH`!)
 
 
 ## Parallelization
@@ -231,7 +236,7 @@ Basically magic, compatible with pytest, and the algorithms used in the implemen
 
 ## Visualisation
 
-* [animatplot]() - 
+* [animatplot]() -
 * [mayavi]() -
 * [cartopy]()
 * [bokeh]() -
