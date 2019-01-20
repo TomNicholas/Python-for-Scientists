@@ -1,4 +1,4 @@
-# Python for Science
+# Python for Scientists
 
 A curated list of recommended Python frameworks, libraries, software and
 resources, all particularly useful for scientific Python users.
@@ -19,7 +19,7 @@ Some libraries appear multiple times where they are useful in multiple
 ways.
 
 
-- [Python-for-Science](#python-for-science)
+- [Python-for-Scientists](#python-for-scientists)
     - [Algebra](#algebra)
     - [Animations](#animations)
     - [Bayesian Analysis](#bayesian-analysis)
