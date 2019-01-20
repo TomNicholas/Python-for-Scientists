@@ -44,7 +44,7 @@ ways.
     - [Parallelization](#parallelization)
     - [Physical Units](#physical-units)
     - [Plotting](#plotting)
-    - [Presentations](#presentations)
+    - [Presentations and Sharing Work](#presentations-and-sharing-work)
     - [Profiling and Benchmarking](#profiling-and-benchmarking)
     - [Scripting](#scripting)
     - [Speed](#speed)
@@ -52,7 +52,7 @@ ways.
     - [Testing](#testing)
     - [Visualisation](#visualisation)
     - [Workflow](#workflow)
-- [Beginners Recommendations](#beginners-recommendations)
+- [Beginner Recommendations](#beginners-recommendations)
 
 
 - - -
@@ -69,7 +69,7 @@ It aims to become a full-featured computer algebra system (CAS) while keeping th
 
 ## Animations
 
-* [animatplot](https://animatplot.readthedocs.io/en/stable/) - A wrapper around `matplotlib`'s `funcanimation` library - makes it very easy to animate matplotlib plots.
+* [animatplot](https://animatplot.readthedocs.io/en/stable/) - A wrapper around `matplotlib`'s `funcanimation` module - makes it very easy to animate matplotlib plots.
 
 
 ## Bayesian Analysis
@@ -90,7 +90,7 @@ It aims to become a full-featured computer algebra system (CAS) while keeping th
 * [PEP8](https://www.python.org/dev/peps/pep-0008/) - The official style guide for python code.
 * [structure](https://docs.python-guide.org/writing/structure/) - The officially recommended way to structure any python project.
 * [flake8](http://flake8.pycqa.org/en/latest/) - A command-line tool which will tell you where you've violated PEP8's recommendations.
-* [pyflakes](https://pypi.org/project/pyflakes/) - Similar to flake8, but shinstead checks for logistic erros (e.g. unused module imports).
+* [pyflakes](https://pypi.org/project/pyflakes/) - Similar to flake8, but instead checks for logistic errors (e.g. unused module imports).
 * [pycodestyle](https://media.readthedocs.org/pdf/pycodestyle/latest/pycodestyle.pdf) - A wrapper for flake8 and pyflakes which runs them both.
 * [pylint](http://pylint.pycqa.org/en/latest/intro.html) - A tool that checks for errors in Python code, tries to enforce a coding standard and looks for code smells.
 
@@ -343,7 +343,7 @@ Written by astrophysicists, but since applied to many other domains.
 *Don't just write and run python scripts. Tools to make your workflow faster, clearer, and easier to come back to later.*
 
 * [ipython](https://ipython.readthedocs.io/en/stable/) - Run python interactively, like MatLab! Forms the backend of Jupyter notebooks.
-* [jupyter notebooks](https://jupyter.org/) -
+* [jupyter notebooks](https://jupyter.org/) - In-browser notebooks comprised of cells which can contain markdown, images, or executable python code! Incredibly valuable for data exploration, presentation and recording work. The perfect format to email to a supervisor for feedback. Can be version-controlled with git so also useful for reproducibility and backing up your work.
 * [jupyterlab](https://jupyterlab.readthedocs.io/en/stable/) - A development environment in which you can write Jupyter notebooks.
 The spiritual successor to spyder, in that it is designed specifically for scientists.
 * [papermill](https://papermill.readthedocs.io/en/latest/) - A  tool for parameterizing, executing, and analyzing multiple Jupyter Notebooks.
