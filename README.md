@@ -5,6 +5,9 @@ resources, all particularly useful for scientific Python users.
 
 Intended for students and researchers in the sciences who want to get
 the most out of the open-source Python ecosystem.
+Aims to provide a list of tools useful for common tasks for scientists,
+without mentioning things which they are unlikely ever to need
+(e.g. authentication, databases, networking, NLP).
 
 There is a section of [must-haves for beginners](#beginners-recommendations).
 
@@ -20,13 +23,15 @@ ways.
     - [Algebra](#algebra)
     - [Animations](#animations)
     - [Bayesian Analysis](#bayesian-analysis)
+    - [Better Scientific Software](#better-scientific-software)
     - [Code Quality](#code-quality)
     - [Data Storage](#data-storage)
-    - [Dates and Times](#dates-and-times)
     - [Debugging](#debugging)
     - [Development Environments](#development-environments)
     - [Documentation](#documentation)
     - [Domain-specific](#domain-specific)
+    - [Error Handling](#error-handling)
+    - [Forecasting](#forecasting)
     - [Gotchas](#gotchas)
     - [GPU Acceleration](#gpu-acceleration)
     - [Graphical Interfaces](#graphical-interfaces)
@@ -41,6 +46,7 @@ ways.
     - [Plotting](#plotting)
     - [Presentations](#presentations)
     - [Profiling and Benchmarking](#profiling-and-benchmarking)
+    - [Scripting](#scripting)
     - [Speed](#speed)
     - [Statistics](#statistics)
     - [Testing](#testing)
@@ -57,17 +63,23 @@ ways.
 *Libraries for manipulation of symbolic algebra, analytic integration etc.*
 
 * [SymPy]() -
-* [sage]()
+* [sagemath](http://www.sagemath.org/) - Mathematical software system with features covering multiple aspects of mathematics, including algebra, combinatorics, numerical mathematics, number theory, and calculus.
 
 
 ## Animations
 
-* [animatplot]() -
+* [animatplot](https://animatplot.readthedocs.io/en/stable/) - A wrapper around `matplotlib`'s `funcanimation` library - makes it very easy to animate matplotlib plots.
 
 
 ## Bayesian Analysis
 
 * [pymc]() -
+* [arviz](https://arviz-devs.github.io/arviz/index.html) - Exploratory analysis of Bayesian models.
+
+
+## Better Scientific Software
+
+* [Better Scientific Software](https://bssw.io/) - Articles and resources on how to write better scientific software.
 
 
 ## Code Quality
@@ -83,11 +95,6 @@ ways.
 * [netcdf4]() -
 * [xarray]() -
 * [MITgcm]() -
-
-
-## Dates and Times
-
-* [dateutil](https://dateutil.readthedocs.io/en/stable/) - Provides powerful extensions to the standard datetime module available in Python.
 
 
 ## Debugging
@@ -107,29 +114,41 @@ Has a professional version, which is free for students.
 
 ## Documentation
 
-* [sphinx]() -
+* [sphinx](http://www.sphinx-doc.org/en/master/) - Sphinx is a tool that makes it easy to create intelligent and beautiful documentation, from the docstrings in your code.
+Originally created for documenting the python language itself.
 * [nbconvert](https://nbconvert.readthedocs.io/en/latest/) - Convert jupyter notebooks to other formats such as PDF, LaTeX, HTML.
 
 
 ## Domain-specific
 
-*Libraries of tools tools developed for python users in various fields of science.*
+*Libraries of tools developed for python users in various fields of science.*
 
-* [astropy]() -
+* [astropy](http://www.astropy.org/) - Various tools and functionality for astronomy and astrophysics.
 * [Biopython](https://biopython.org/) - Tools for biological computation.
-* [cartopy]() -
-* [geoviews](http://geoviews.org/) - makes it easy to explore and visualize geographical, meteorological, and oceanographic datasets, such as those used in weather, climate, and remote sensing research.
+* [geoviews](http://geoviews.org/) - Makes it easy to explore and visualize geographical, meteorological, and oceanographic datasets, such as those used in weather, climate, and remote sensing research.
 * [MetPy](https://unidata.github.io/MetPy/latest/) - MetPy is a collection of tools in Python for reading, visualizing and performing calculations with weather data.
-* [PlasmaPy]() -
-* [psychopy]() -
+* [NetworkX](http://networkx.github.io/)  - A package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.
+* [nilearn](http://nilearn.github.io/) - Machine learning for Neuro-Imaging in python.
+* [PlasmaPy](http://docs.plasmapy.org/en/stable/) - Various tools for plasma physics.
+* [psychopy](http://www.psychopy.org/) - An open-source application allowing you run a wide range of neuroscience, psychology and psychophysics experiments.
 * [pyrocko](https://pyrocko.org/) - A seismology toolkit for python.
-* [SpectroscoPyx](https://github.com/PlasmaPy/SpectroscoPyx) - A community developed python package for spectroscopy.
+* [scikit-beam](https://github.com/scikit-beam/scikit-beam) - Data analysis tools for X-Ray, Neutron and Electron sciences
+* [scikit-spectra](http://hugadams.github.io/scikit-spectra/) - A community developed python package for spectroscopy.
+* [SunPy](https://sunpy.org/) - SunPy is a data-analysis environment specializing in providing the software necessary to analyze solar and heliospheric data in Python.
 * [TomoPy](https://tomopy.readthedocs.io/en/latest/) - Package for tomographic data processing and image reconstruction.
+
+
+## Error handling
+
+* [errors]() -
+* [warnings]() - Throw proper warnings instead of using print statements. Python standard library module.
+* [logging]()
 
 
 ## Forecasting
 
-* [prophet]() -
+* [prophet](https://facebook.github.io/prophet/) - Tool for producing high quality forecasts for time series data that has multiple seasonality with linear or non-linear growth.
+Developed by Facebook.
 
 
 ## Gotchas
@@ -175,7 +194,7 @@ Ultimately just a contiguous-in-memory C array, wrapped very nicely with python.
 
 ## Optimisation problems
 
-* [nlopt]() -
+* [nlopt](https://github.com/stevengj/nlopt) - Library for nonlinear optimization, wrapping many algorithms for global and local, constrained or unconstrained, optimization.
 
 
 ## Package Management
@@ -222,22 +241,33 @@ ds['density'].mean(dim='time')
 * [anatomy of matplotlib](https://github.com/matplotlib/AnatomyOfMatplotlib) - Tutorial on how matplotlib is structured.
 * [scientific-matplotlib]() -
 * [seaborn]() -
-* [xarray.plot]() -
+* [xarray.plot](http://xarray.pydata.org/en/stable/plotting.html) - Submodule of xarray which makes plotting into a one-line job: `data['density'].plot()`.
 * [colorcet](http://colorcet.pyviz.org/) - A set of useful [perceptually uniform](https://arxiv.org/abs/1509.03700) colormaps for plotting scientific data
 
 
 ## Presentations and sharing work
 
-* [RISE]() -
 * [Binder](https://mybinder.org/) - Online Jupyter Notebook hosting for GitHub repositories.
 Allows users to run Jupyter notebooks from GitHub repositories in the cloud, without Python installed locally.
+* [nb_pdf_template](https://github.com/t-makaro/nb_pdf_template) - A more accurate representation of jupyter notebooks when converting to pdfs.
+* [RISE]() - A plugin for Jupyter which turns notebooks into slick presentations.
 * [jupyter-rise]() -
-* [nb_pdf_template]() -
 
 
 ## Profiling and benchmarking
 
-* [py-spy](https://github.com/benfred/py-spy) - A profiler for python code which doesn't interfere with the running process.
+* [py-spy](https://github.com/benfred/py-spy) - A profiler for python code which doesn't interfere with the running prohttps://palletsprojects.com/p/click/cess.
+
+
+## Scripting
+
+*Tools which are likely to be useful when writing python scripts to automate common tasks.*
+
+* [click](https://palletsprojects.com/p/click/) - Run your scripts from the command line, with as little extra code as possible.
+* [dateutil](https://dateutil.readthedocs.io/en/stable/) - Provides powerful extensions to the standard datetime module available in Python.
+* [gitpython](https://gitpython.readthedocs.io/en/stable/) - Interact with git from python. Useful for tasks like checking if your simulation code has uncommitted changes before executing it.
+* [pathlib](https://docs.python.org/3/library/pathlib.html) - Use this anytime you want to do anything with a file path. Obviates the need for `os` and `sys` most of the time.
+A module in the python standard library.
 
 
 ## Speed
@@ -276,19 +306,23 @@ Basically magic, compatible with pytest, and the algorithms used in the implemen
 
 ## Visualisation
 
-* [animatplot]() -
-* [mayavi]() -
-* [cartopy]()
+* [animatplot](https://animatplot.readthedocs.io/en/stable/) - A wrapper around `matplotlib`'s `funcanimation` library - makes it very easy to animate matplotlib plots.
+* [mayavi](http://docs.enthought.com/mayavi/mayavi/) - 3D scientific data visualization and plotting in Python.
+* [cartopy](https://scitools.org.uk/cartopy/docs/latest/) -  A library for cartographic projections and plots, with matplotlib support.
 * [bokeh]() -
 * [plotly]() -
 * [holoviews]() -
+* [ipyvolume](https://ipyvolume.readthedocs.io/en/latest/index.html#built-on-ipywidgets) - 3d plotting for Python in the Jupyter notebook.
+* [vispy](http://vispy.org/index.htmlhttp://vispy.org/index.html) - Interactive scientific visualisation in python.
+* [yt](http://yt-project.org/) - Very powerful software suite for analysing and visualising volumetric data.
+Written by astrophysicists, but since applied to many other domains.
 
 
 ## Workflow
 
-*Don't just write and run python scripts. Tools to make your workflow faster, clearer, and easier to come back to later.    *
+*Don't just write and run python scripts. Tools to make your workflow faster, clearer, and easier to come back to later.*
 
-* [ipython](https://ipython.readthedocs.io/en/stable/) - Run python interactively, like MatLab! Forms the backend of jupyter notebooks.
+* [ipython](https://ipython.readthedocs.io/en/stable/) - Run python interactively, like MatLab! Forms the backend of Jupyter notebooks.
 * [jupyter notebooks](https://jupyter.org/) -
 * [jupyterlab](https://jupyterlab.readthedocs.io/en/stable/) - A development environment in which you can write Jupyter notebooks.
 The spiritual successor to spyder, in that it is designed specifically for scientists.
@@ -303,4 +337,4 @@ The spiritual successor to spyder, in that it is designed specifically for scien
 * Next, wrap your data into clearer, higher-level objects with either `Pandas` or `xarray` (use `xarray` if your data has more than one dimension).
 * Before writing new analysis functions, check if someone has already solved your problem for you in `scipy` , or in one of python's domain-specific scientific software packages.
 * As soon as you start writing your own analysis functions, test they're correct with unit tests written with `pytest`.
-* Analyse your data interactively with `ipython`, and record your work in a `jupyter notebook`.
+* Analyse your data interactively with `ipython`, and record your work in a `Jupyter notebook`.
