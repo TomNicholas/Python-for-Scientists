@@ -29,17 +29,17 @@ ways.
     - [Debugging](#debugging)
     - [Development Environments](#development-environments)
     - [Documentation](#documentation)
-    - [Domain-specific](#domain-specific)
+    - [Domain-Specific Tools](#domain-specific-tools)
     - [Error Handling](#error-handling)
     - [Forecasting](#forecasting)
     - [Gotchas](#gotchas)
     - [GPU Acceleration](#gpu-acceleration)
     - [Graphical Interfaces](#graphical-interfaces)
     - [Job Scheduling](#job-scheduling)
-    - [Labelled data](#labelled-data)
+    - [Labelled Data](#labelled-data)
     - [Mathematical Library Functions](#mathematical-library-functions)
     - [Numerical Data](#numerical-data)
-    - [Optimisation](#optimisation)
+    - [Optimisation Problems](#optimisation-problems)
     - [Package Management](#package-management)
     - [Parallelization](#parallelization)
     - [Physical Units](#physical-units)
@@ -85,7 +85,7 @@ It aims to become a full-featured computer algebra system (CAS) while keeping th
 
 ## Code Quality
 
-*Tools to help you write neat and error-free python code/*
+*Tools to help you write neat and error-free python code*
 
 * [PEP8](https://www.python.org/dev/peps/pep-0008/) - The official style guide for python code.
 * [structure](https://docs.python-guide.org/writing/structure/) - The officially recommended way to structure any python project.
@@ -127,7 +127,7 @@ Originally created for documenting the python language itself.
 * [nbconvert](https://nbconvert.readthedocs.io/en/latest/) - Convert jupyter notebooks to other formats such as PDF, LaTeX, HTML.
 
 
-## Domain-specific
+## Domain-Specific Tools
 
 *Libraries of tools developed for python users in various fields of science.*
 
@@ -147,7 +147,7 @@ Originally created for documenting the python language itself.
 * [TomoPy](https://tomopy.readthedocs.io/en/latest/) - Package for tomographic data processing and image reconstruction.
 
 
-## Error handling
+## Error Handling
 
 * [errors](https://docs.python.org/3/tutorial/errors.html) - How to properly raise and handle errors in python.
 * [warnings](https://docs.python.org/3/library/warnings.html) - Throw proper warnings instead of using print statements. Python standard library module.
@@ -165,25 +165,25 @@ Developed by Facebook.
 * [python-gotchas](https://github.com/satwikkansal/wtfpython) - A collection of surprising Python snippets and lesser-known features.
 
 
-## GPU acceleration
+## GPU Acceleration
 
 * [cupy](https://cupy.chainer.org/) - An implementation of a NumPy-compatible multi-dimensional array on CUDA.
 * [numba](http://numba.pydata.org/numba-doc/0.13/CUDAJit.html) - Numba can compile python functions into CUDA code.
 
 
-## Graphical interfaces
+## Graphical Interfaces
 
 * [pyqt5](http://pyqt.sourceforge.net/Docs/PyQt5/) - Library which lets you use the Qt GUI framework (itself written in C++) from python.
 
 
-## Job scheduling
+## Job Scheduling
 
 * [experi](https://experi.readthedocs.io/en/latest/) - An interface for managing computational experiments with many independent variables.
 * [lancet](http://ioam.github.io/lancet/) - Launch jobs, organize the output, and dissect the results.
 * [papermill](https://papermill.readthedocs.io/en/latest/) - A  tool for parameterizing, executing, and analyzing multiple Jupyter Notebooks.
 
 
-## Labelled data
+## Labelled Data
 
 * [pandas](https://pandas.pydata.org/) - Major library for data analysis, made more powerful through the use of labelled data.
 * [xarray](http://xarray.pydata.org/en/stable/) - N-dimensional labelled arrays and datasets.
@@ -192,21 +192,20 @@ Allows you to perform operations with incredible ease and clarity:
   average_temp = data['temperature'].sel('longitude'=40).mean(dim='time')
   ```
 
-
-## Mathematical library functions
+## Mathematical Library Functions
 
 * [scipy](https://docs.scipy.org/doc/scipy/reference/) - The standard resource for all kinds of mathematical functions.
 * [xrft](https://xrft.readthedocs.io/en/latest/) - Discrete Fourier transform operations for xarray data structures.
 
 
-## Numerical data
+## Numerical Data
 
 * [numpy](http://www.numpy.org/) - The fundamental package for numerhon.
 So ubiquitous that it might as well be part of python's standard library at this point.
 Ultimately just a contiguous-in-memory C array, wrapped very nicely with python.
 
 
-## Optimisation problems
+## Optimisation Problems
 
 * [nlopt](https://github.com/stevengj/nlopt) - Library for nonlinear optimization, wrapping many algorithms for global and local, constrained or unconstrained, optimization.
 
@@ -262,7 +261,7 @@ The standard way to plot data in python.
 * [colorcet](http://colorcet.pyviz.org/) - A set of useful [perceptually uniform](https://arxiv.org/abs/1509.03700) colormaps for plotting scientific data
 
 
-## Presentations and sharing work
+## Presentations and Sharing Work
 
 * [Binder](https://mybinder.org/) - Online Jupyter Notebook hosting for GitHub repositories.
 Allows users to run Jupyter notebooks from GitHub repositories in the cloud, without Python installed locally.
