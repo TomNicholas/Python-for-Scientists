@@ -139,6 +139,7 @@ Originally created for documenting the python language itself.
 * [nilearn](http://nilearn.github.io/) - Machine learning for Neuro-Imaging in python.
 * [Parcels](http://oceanparcels.org/) - Track particles along circulating ocean currents.
 * [PlasmaPy](http://docs.plasmapy.org/en/stable/) - Various tools for plasma physics.
+* [ProDy](http://prody.csb.pitt.edu/) - Package for protein structural dynamics analysis.
 * [psychopy](http://www.psychopy.org/) - An open-source application allowing you run a wide range of neuroscience, psychology and psychophysics experiments.
 * [pyrocko](https://pyrocko.org/) - A seismology toolkit for python.
 * [QuTIP](http://qutip.org/) - QuTiP is open-source software for simulating the dynamics of open quantum systems.
