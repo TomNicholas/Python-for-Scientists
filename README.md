@@ -9,7 +9,7 @@ Aims to provide a list of tools useful for common tasks for scientists,
 without mentioning things which they are unlikely ever to need
 (e.g. authentication, databases, networking, NLP).
 
-There is a section of [must-haves for beginners](#beginners-recommendations).
+There is a section of [must-haves for beginners](#beginner-recommendations).
 
 List inspired by [awesome-python](https://github.com/vinta/awesome-python),
 which is a great similar resource for anything else you might want to do
