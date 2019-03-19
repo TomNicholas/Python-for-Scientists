@@ -41,6 +41,7 @@ ways.
     - [Numerical Data](#numerical-data)
     - [Optimisation Problems](#optimisation-problems)
     - [Package Management](#package-management)
+    - [Paper Writing](#paper-writing)
     - [Parallelization](#parallelization)
     - [Physical Units](#physical-units)
     - [Plotting](#plotting)
@@ -224,6 +225,12 @@ Also obviates the need for system virtual environments.
 * [setuptools](https://setuptools.readthedocs.io/en/latest/) - For when you make your own module, and want to install it properly into your conda environment (so you never need to touch your `$PYTHONPATH`!)
 
 
+## Paper Writing
+
+* [matplotlib2tikz](https://github.com/nschloe/matplotlib2tikz) - A converter that takes a matplotlib figure and spits out a TikZ/PGFplots figure for smooth integration into LaTeX.
+Much better than having to try and alter details of a png image later on.
+
+
 ## Parallelization
 
 *Use all the cores of your machine, and scale up to clusters!*
@@ -260,7 +267,7 @@ The standard way to plot data in python.
 * [scientific-matplotlib](https://github.com/garrettj403/SciencePlots) - Matplotlib stylesheets for scientifc plots.
 * [seaborn](https://seaborn.pydata.org/) - A  data visualisation library based on matplotlib. Produces much prettier plots than out-of-the-box matplotlib will.
 * [xarray.plot](http://xarray.pydata.org/en/stable/plotting.html) - Submodule of xarray which makes plotting into a one-line job: `data['density'].plot()`.
-* [colorcet](http://colorcet.pyviz.org/) - A set of useful [perceptually uniform](https://arxiv.org/abs/1509.03700) colormaps for plotting scientific data
+* [colorcet](http://colorcet.pyviz.org/) - A set of useful [perceptually uniform](https://arxiv.org/abs/1509.03700) colormaps for plotting scientific data.
 
 
 ## Presentations and Sharing Work
