@@ -263,7 +263,8 @@ Dask is especially useful for analysing datasets which are larger than your RAM.
 
 * [matplotlib](https://matplotlib.org/) - A 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms.
 The standard way to plot data in python.
-* [anatomy of matplotlib](https://github.com/matplotlib/AnatomyOfMatplotlib) - Tutorial on how matplotlib is structured.
+* [anatomy of matplotlib](https://github.com/matplotlib/AnatomyOfMatplotlib) - Tutorials on how to use matplotlib.
+* [matplotlib guide](https://realpython.com/python-matplotlib-guide/) - Article explaining how matplotlib is intended to be used, and will help clarify the differences between figures and axes, object-oriented approach, MATLAB-like stateful approach, interactivity etc. Also good because it gives clear best practice recommendations.
 * [scientific-matplotlib](https://github.com/garrettj403/SciencePlots) - Matplotlib stylesheets for scientifc plots.
 * [seaborn](https://seaborn.pydata.org/) - A  data visualisation library based on matplotlib. Produces much prettier plots than out-of-the-box matplotlib will.
 * [xarray.plot](http://xarray.pydata.org/en/stable/plotting.html) - Submodule of xarray which makes plotting into a one-line job: `data['density'].plot()`.
