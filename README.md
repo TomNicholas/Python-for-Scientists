@@ -342,7 +342,7 @@ Basically magic, compatible with pytest, and the algorithms used in the implemen
 * [plotly](https://plot.ly/python/) - Plotly's Python graphing library makes interactive, publication-quality graphs online.
 * [holoviews](http://holoviews.org/) - Stop plotting your data - annotate your data and let it visualize itself.
 * [ipyvolume](https://ipyvolume.readthedocs.io/en/latest/index.html#built-on-ipywidgets) - 3d plotting for Python in the Jupyter notebook.
-* [vispy](http://vispy.org/index.htmlhttp://vispy.org/index.html) - Interactive scientific visualisation in python.
+* [vispy](http://vispy.org/index.html) - Interactive scientific visualisation in python.
 * [yt](http://yt-project.org/) - Very powerful software suite for analysing and visualising volumetric data.
 Written by astrophysicists, but since applied to many other domains.
 
