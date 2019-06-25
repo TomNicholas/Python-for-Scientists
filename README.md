@@ -144,6 +144,7 @@ Originally created for documenting the python language itself.
 * [psychopy](http://www.psychopy.org/) - An open-source application allowing you run a wide range of neuroscience, psychology and psychophysics experiments.
 * [pyrocko](https://pyrocko.org/) - A seismology toolkit for python.
 * [QuTIP](http://qutip.org/) - QuTiP is open-source software for simulating the dynamics of open quantum systems.
+* [radis](https://github.com/radis/radis) - A package for infrared molecular spectroscopy
 * [scikit-beam](https://github.com/scikit-beam/scikit-beam) - Data analysis tools for X-Ray, Neutron and Electron sciences
 * [scikit-spectra](http://hugadams.github.io/scikit-spectra/) - A community developed python package for spectroscopy.
 * [SunPy](https://sunpy.org/) - SunPy is a data-analysis environment specializing in providing the software necessary to analyze solar and heliospheric data in Python.
