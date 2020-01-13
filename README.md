@@ -230,6 +230,7 @@ Also obviates the need for system virtual environments.
 
 * [matplotlib2tikz](https://github.com/nschloe/matplotlib2tikz) - A converter that takes a matplotlib figure and spits out a TikZ/PGFplots figure for smooth integration into LaTeX.
 Much better than having to try and alter details of a png image later on.
+* [Scientific Writing](https://github.com/natj/sci_writing) - Not python, but a few useful tips on scientific writing.
 
 
 ## Parallelization
