@@ -261,7 +261,7 @@ Dask is especially useful for analysing datasets which are larger than your RAM.
 
 ## Plotting
 
-*Producing static plots of publication quality.*
+*Producing static plots of publication quality. (For 3D plots see the *Visualisation* section)*
 
 * [matplotlib](https://matplotlib.org/) - A 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms.
 The standard way to plot data in python.
@@ -335,12 +335,13 @@ Basically magic, compatible with pytest, and the algorithms used in the implemen
 
 ## Visualisation
 
-*There are currently many competing visualisation libaries in python. 3D support is somewhat lacking though.*
+*There are currently many competing visualisation libaries in python.*
 
 * [animatplot](https://animatplot.readthedocs.io/en/stable/) - A wrapper around `matplotlib`'s `funcanimation` library - makes it very easy to animate matplotlib plots.
 * [mayavi](http://docs.enthought.com/mayavi/mayavi/) - 3D scientific data visualization and plotting in Python.
 * [cartopy](https://scitools.org.uk/cartopy/docs/latest/) -  A library for cartographic projections and plots, with matplotlib support.
 * [bokeh](https://bokeh.pydata.org/en/latest/) - Bokeh is an interactive visualization library that targets modern web browsers for presentation.
+* [K3D-jupyter](https://github.com/K3D-tools/K3D-jupyter) - K3D-jupyter is a new 3D plotting library which uses WebGL to create interactive plots in jupyter notebooks. Very powerful and fast, with some [seriously impressive examples](https://k3d-jupyter.readthedocs.io/en/latest/showcase/index.html). However as of early 2020 the [documentation](https://k3d-jupyter.readthedocs.io/en/latest/index.html) is a little lacking.
 * [plotly](https://plot.ly/python/) - Plotly's Python graphing library makes interactive, publication-quality graphs online.
 * [holoviews](http://holoviews.org/) - Stop plotting your data - annotate your data and let it visualize itself.
 * [ipyvolume](https://ipyvolume.readthedocs.io/en/latest/index.html#built-on-ipywidgets) - 3d plotting for Python in the Jupyter notebook.
