@@ -346,9 +346,10 @@ Basically magic, compatible with pytest, and the algorithms used in the implemen
 * [holoviews](http://holoviews.org/) - Stop plotting your data - annotate your data and let it visualize itself.
 * [ipyvolume](https://ipyvolume.readthedocs.io/en/latest/index.html#built-on-ipywidgets) - 3d plotting for Python in the Jupyter notebook.
 * [vispy](http://vispy.org/index.html) - Interactive scientific visualisation in python.
+* [vtk](https://pypi.org/project/vtk/) - Low-level VTK interface
+* [vista](https://docs.pyvista.org/) - Streamlined interface to VTK - mainly a wrapper for VTK package
 * [yt](http://yt-project.org/) - Very powerful software suite for analysing and visualising volumetric data.
 Written by astrophysicists, but since applied to many other domains.
-
 
 ## Workflow
 
