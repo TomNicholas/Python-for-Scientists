@@ -71,6 +71,8 @@ It aims to become a full-featured computer algebra system (CAS) while keeping th
 ## Animations
 
 * [animatplot](https://animatplot.readthedocs.io/en/stable/) - A wrapper around `matplotlib`'s `funcanimation` module - makes it very easy to animate matplotlib plots.
+* [Line Chart Animation Tutorial](https://holypython.com/python-visualization-tutorial/guide-to-python-animations-animating-line-charts/) - A practical tutorial for creating Animated Line Charts with Matplotlib's Animation module.
+* [Bar Chart Animation Tutorial](https://holypython.com/python-visualization-tutorial/creating-bar-chart-animations/) - A practical tutorial for creating Animated Bar Charts with Matplotlib's Animation module.
 
 
 ## Bayesian Analysis
@@ -104,6 +106,7 @@ netcdf4-python is a Python interface to the netCDF C library.
 Will also load the data lazily, which is extremely useful when dealing with large amounts of data.
 * [xmitgcm](https://xmitgcm.readthedocs.io/en/latest/) - A python package for reading MITgcm binary MDS files into xarray data structures.
 Included as an example of how to go about loading unusual binary file formats into xarray data structures intelligently.
+* [SQLite Tutorials](https://holypython.com/python-sqlite-tutorial/) - SQLite Tutorials with Python examples, demonstrations and database tips.
 
 
 ## Debugging
@@ -167,6 +170,7 @@ Developed by Facebook.
 ## Gotchas
 
 * [python-gotchas](https://github.com/satwikkansal/wtfpython) - A collection of surprising Python snippets and lesser-known features.
+* [100 Python Tips & Tricks](https://holypython.com/100-python-tips-tricks/) - 100 Essential Python Tips with interesting Examples
 
 
 ## GPU Acceleration
@@ -178,6 +182,8 @@ Developed by Facebook.
 ## Graphical Interfaces
 
 * [pyqt5](http://pyqt.sourceforge.net/Docs/PyQt5/) - Library which lets you use the Qt GUI framework (itself written in C++) from python.
+* [PySimpleGui](http://pyqt.sourceforge.net/Docs/PyQt5/) - A simple library for creating GUI programs with Python very quickly.
+* [Practical PySimpleGui Tutorials](https://holypython.com/python-gui-tutorial/) - Useful PySimpleGui Tutorials with Python Examples
 
 
 ## Job Scheduling
@@ -271,6 +277,9 @@ The standard way to plot data in python.
 * [seaborn](https://seaborn.pydata.org/) - A  data visualisation library based on matplotlib. Produces much prettier plots than out-of-the-box matplotlib will.
 * [xarray.plot](http://xarray.pydata.org/en/stable/plotting.html) - Submodule of xarray which makes plotting into a one-line job: `data['density'].plot()`.
 * [colorcet](http://colorcet.pyviz.org/) - A set of useful [perceptually uniform](https://arxiv.org/abs/1509.03700) colormaps for plotting scientific data.
+* [Hexbin](https://holypython.com/python-visualization-tutorial/creating-hexbin-charts/) - Hexbin plotting tutorials.
+* [Pcolor](https://holypython.com/python-visualization-tutorial/pcolor-and-pcolormesh/) - Pcolor and Pcolormesh tutorials
+* [Wordcloud](https://holypython.com/python-visualization-tutorial/word-cloud-visualization/) - Wordcloud Visualization with Python examples
 
 
 ## Presentations and Sharing Work
@@ -297,6 +306,7 @@ Allows users to run Jupyter notebooks from GitHub repositories in the cloud, wit
 * [gitpython](https://gitpython.readthedocs.io/en/stable/) - Interact with git from python. Useful for tasks like checking if your simulation code has uncommitted changes before executing it.
 * [pathlib](https://docs.python.org/3/library/pathlib.html) - Use this anytime you want to do anything with a file path. Obviates the need for `os` and `sys` most of the time.
 A module in the python standard library.
+* [Event Scheduling](https://holypython.com/how-to-schedule-tasks-with-py-files-python-manual-automated/) - Event scheduling script examples for Python 
 
 
 ## Speed
