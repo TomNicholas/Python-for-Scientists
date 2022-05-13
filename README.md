@@ -281,6 +281,7 @@ The standard way to plot data in python.
 * [Hexbin](https://holypython.com/python-visualization-tutorial/creating-hexbin-charts/) - Hexbin plotting tutorials.
 * [Pcolor](https://holypython.com/python-visualization-tutorial/pcolor-and-pcolormesh/) - Pcolor and Pcolormesh tutorials
 * [Wordcloud](https://holypython.com/python-visualization-tutorial/word-cloud-visualization/) - Wordcloud Visualization with Python examples
+* [holoviews](https://holoviews.org/) - A much more modern plotting library, useful for all sorts of scientific data. Interactive, scalable, and animatable.
 
 
 ## Presentations and Sharing Work
@@ -382,3 +383,4 @@ The spiritual successor to spyder, in that it is designed specifically for scien
 * Before writing new analysis functions, check if someone has already solved your problem for you in `scipy` , or in one of python's domain-specific scientific software packages.
 * As soon as you start writing your own analysis functions, test they're correct with unit tests written with `pytest`.
 * Analyse your data interactively with `ipython`, and record your work in a `Jupyter notebook`.
+* Plot your results with `holoviews`.
