@@ -102,6 +102,7 @@ It aims to become a full-featured computer algebra system (CAS) while keeping th
 netcdf4-python is a Python interface to the netCDF C library.
 * [xarray](http://xarray.pydata.org/en/stable/io.html#netcdf) - xarray's data model is based on netCDF, and provides the easiest way of reading and writing netCDF4 files in python.
 Will also load the data lazily, which is extremely useful when dealing with large amounts of data.
+* [Zarr](https://github.com/zarr-developers/zarr-python) - Zarr is a data format designed to work efficiently for very large datasets, accessed in parallel. If you normally use netCDF but want to scale up your analysis, have a look at Zarr.
 * [xmitgcm](https://xmitgcm.readthedocs.io/en/latest/) - A python package for reading MITgcm binary MDS files into xarray data structures.
 Included as an example of how to go about loading unusual binary file formats into xarray data structures intelligently.
 
