@@ -384,3 +384,9 @@ The spiritual successor to spyder, in that it is designed specifically for scien
 * As soon as you start writing your own analysis functions, test they're correct with unit tests written with `pytest`.
 * Analyse your data interactively with `ipython`, and record your work in a `Jupyter notebook`.
 * Plot your results with `holoviews`.
+
+---
+
+## Data visualisation tips
+
+* ["Friends don't let friends make bad graphs"](https://github.com/cxli233/FriendsDontLetFriends) - A collection of useful tips on why certain types of publication figures are very misleading, illustrated with examples of the problem and what to do instead.
