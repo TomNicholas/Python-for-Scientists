@@ -347,7 +347,7 @@ Basically magic, compatible with pytest, and the algorithms used in the implemen
 
 ## Visualisation
 
-*There are currently many competing visualisation libaries in python.*
+*There are currently many competing visualisation libraries in python.*
 
 * [animatplot](https://animatplot.readthedocs.io/en/stable/) - A wrapper around `matplotlib`'s `funcanimation` library - makes it very easy to animate matplotlib plots.
 * [mayavi](http://docs.enthought.com/mayavi/mayavi/) - 3D scientific data visualization and plotting in Python.
