@@ -377,7 +377,7 @@ The spiritual successor to spyder, in that it is designed specifically for scien
 
 # Beginner Recommendations
 
-* First, install python through anaconda, which will also give you the packages you're about to use.
+* First, [install python](https://www.scaler.com/topics/python/how-to-install-python-in-windows/) through anaconda, which will also give you the packages you're about to use.
 * Write your code in either `pycharm` (if you want a professional IDE), `spyder` or  `jupyterlab` (if you're used to MatLabs' environment).
 * Become familiar with `numpy`, the fundamental numeric object in python, and `matplotlib`, the standard way to plot.
 * Next, wrap your data into clearer, higher-level objects with either `Pandas` or `xarray` (use `xarray` if your data has more than one dimension).
