@@ -104,7 +104,7 @@ It aims to become a full-featured computer algebra system (CAS) while keeping th
 netcdf4-python is a Python interface to the netCDF C library.
 * [xarray](http://xarray.pydata.org/en/stable/io.html#netcdf) - xarray's data model is based on netCDF, and provides the easiest way of reading and writing netCDF4 files in python.
 Will also load the data lazily, which is extremely useful when dealing with large amounts of data.
-* [Zarr](https://github.com/zarr-developers/zarr-python) - Zarr is a data format designed to work efficiently for very large datasets, accessed in parallel. If you normally use netCDF but want to scale up your analysis, have a look at Zarr.
+* [Zarr](https://github.com/zarr-developers/zarr-python) - Zarr is a data format designed to work efficiently for very large multidimensional datasets, accessed in parallel. If you normally use netCDF but want to scale up your analysis, have a look at Zarr.
 * [xmitgcm](https://xmitgcm.readthedocs.io/en/latest/) - A python package for reading MITgcm binary MDS files into xarray data structures.
 Included as an example of how to go about loading unusual binary file formats into xarray data structures intelligently.
 * [SQLite Tutorials](https://holypython.com/python-sqlite-tutorial/) - SQLite Tutorials with Python examples, demonstrations and database tips.
@@ -378,11 +378,11 @@ The spiritual successor to spyder, in that it is designed specifically for scien
 # Beginner Recommendations
 
 * First, install python through anaconda, which will also give you the packages you're about to use.
-* Write your code in either `pycharm` (if you want a professional IDE), `spyder` or  `jupyterlab` (if you're used to MatLabs' environment).
+* Write your code in either `pycharm`/`vscode` (if you want a professional IDE), or  `jupyterlab` (if you're used to MatLabs' environment).
 * Become familiar with `numpy`, the fundamental numeric object in python, and `matplotlib`, the standard way to plot.
 * Next, wrap your data into clearer, higher-level objects with either `Pandas` or `xarray` (use `xarray` if your data has more than one dimension).
 * Before writing new analysis functions, check if someone has already solved your problem for you in `scipy` , or in one of python's domain-specific scientific software packages.
-* As soon as you start writing your own analysis functions, test they're correct with unit tests written with `pytest`.
+* If you start writing collections of your own analysis functions, test they're correct with unit tests written with `pytest`.
 * Analyse your data interactively with `ipython`, and record your work in a `Jupyter notebook`.
 * Plot your results with `holoviews`.
 
