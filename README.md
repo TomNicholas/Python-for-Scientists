@@ -138,6 +138,7 @@ Originally created for documenting the python language itself.
 
 * [astropy](http://www.astropy.org/) - Various tools and functionality for astronomy and astrophysics.
 * [Biopython](https://biopython.org/) - Tools for biological computation.
+* [EinsteinPy](https://einsteinpy.org/) - Symbolic and numeric studies of problems arising in General Relativity and gravitational physics.
 * [geoviews](http://geoviews.org/) - Makes it easy to explore and visualize geographical, meteorological, and oceanographic datasets, such as those used in weather, climate, and remote sensing research.
 * [graph-tool](https://graph-tool.skewed.de/) - Efficient manipulation, visualization and statistical analysis of graphs and networks.
 * [MetPy](https://unidata.github.io/MetPy/latest/) - MetPy is a collection of tools in Python for reading, visualizing and performing calculations with weather data.
