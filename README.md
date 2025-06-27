@@ -38,6 +38,7 @@ ways.
     - [Job Scheduling](#job-scheduling)
     - [Labelled Data](#labelled-data)
     - [Mathematical Library Functions](#mathematical-library-functions)
+    - [Measurement control](#measurement-control)
     - [Numerical Data](#numerical-data)
     - [Optimisation Problems](#optimisation-problems)
     - [Package Management](#package-management)
@@ -209,6 +210,11 @@ Allows you to perform operations with incredible ease and clarity:
 
 * [scipy](https://docs.scipy.org/doc/scipy/reference/) - The standard resource for all kinds of mathematical functions.
 * [xrft](https://xrft.readthedocs.io/en/latest/) - Discrete Fourier transform operations for xarray data structures.
+
+
+## Measurement Control
+
+* [pymeasure](https://pymeasure.readthedocs.io/en/latest/) - Repository of measurement device drivers and a framework for performing experiments.
 
 
 ## Numerical Data
